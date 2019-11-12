@@ -8,9 +8,19 @@ pyenv install 3.7.3
 
 export FLASK_APP=predictor_app.py
 pip3 install -r requirements.txt
-python3 -m flask run
+python3 -m flask run --host=0.0.0.0
 
 
+sudo snap install heroku --classic
+heroku create emoji-predictor
+
+heroku git:remote -a emoji-predictor
+git push heroku master
+
+
+url
+
+https://emoji-predictor.herokuapp.com/
 
 
 

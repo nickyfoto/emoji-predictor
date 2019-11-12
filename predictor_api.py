@@ -9,7 +9,8 @@ about whether Flask is working. A short check is run at the bottom of the file.
 
 import pickle
 import numpy as np
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 import re
 
 # Load the models 
