@@ -83,7 +83,7 @@
             </thead>
             <tbody>
                 <tr>
-                  <td rowspan="6" class="column1">{{ chat_in }}</td>
+                  <td rowspan="5" class="column1">{{ chat_in }}</td>
                   <!-- <td rowspan="6" class="column1">{{ chat_in }}</td> -->
                   <td class="column1">{{prediction[0]['name']}}</td>
                   <td class="column2">{{ (100 * prediction[0]['prob']) | round}}%</td>
@@ -104,9 +104,6 @@
                   <td class="column1">{{prediction[4]['name']}}</td>
                   <td class="column2">{{ (100 * prediction[4]['prob']) | round}}%</td>
                 </tr>
-                <tr>
-                  <td class="column1">{{prediction[5]['name']}}</td>
-                  <td class="column2">{{ (100 * prediction[5]['prob']) | round}}%</td>
             </tbody>
           </table>
           <br>
