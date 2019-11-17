@@ -22,7 +22,8 @@ import pandas as pd
 # word_vectorizer = joblib.load('static/models/word_vectorizer.p')
 
 # model_dict = joblib.load('./static/models/log_models.p')
-model = joblib.load('./static/models/emojis_model.joblib')
+# model = joblib.load('./static/models/emojis_model.joblib')
+model = joblib.load('./static/models/emojis_model_19111601.joblib')
 mapping_file = './static/models/Mapping.csv'
 emojis = pd.read_csv(mapping_file, usecols = ['emoticons']) 
 
@@ -67,12 +68,16 @@ def make_prediction(input_chat):
 
 if __name__ == '__main__':
     from pprint import pprint
-    print("Checking to see what empty string predicts")
-    print('input string is ')
-    chat_in = 'bob'
-    pprint(chat_in)
-
-    x_input, probs = make_prediction(chat_in)
-    print(f'Input values: {x_input}')
-    print('Output probabilities')
-    pprint(probs)
+    # print("Checking to see what empty string predicts")
+    # print('input string is ')
+    def test_key_words(chat_in, note):
+        x_input, probs = make_prediction(chat_in)
+        print(f'Input values: {x_input}, note: {note}')
+        pprint(probs)
+    
+    test_key_words('usa', 'us flag')
+    test_key_words('tree', 'tree')
+    test_key_words('christmas', 'tree')
+    test_key_words('camera', 'camera')
+    test_key_words('photo', '')
+    test_key_words('cry', 'cry')
