@@ -6,6 +6,7 @@ pyenv install 3.7.3
 
 ## run flask app locally
 
+```
 export FLASK_APP=predictor_app.py
 pip3 install -r requirements.txt
 python3 -m flask run --host=0.0.0.0
@@ -16,7 +17,7 @@ heroku create emoji-predictor
 
 heroku git:remote -a emoji-predictor
 git push heroku master
-
+```
 
 url
 
