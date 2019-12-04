@@ -1,4 +1,10 @@
-## run flask app locally
+# Emoji Predictor
+
+deploy [premoji](https://github.com/nickyfoto/premoji/) on heroku.
+
+## Development
+
+### run flask app locally
 
 ```
 export FLASK_APP=predictor_app.py
@@ -6,7 +12,7 @@ pip3 install -r requirements.txt
 python3 -m flask run --host=0.0.0.0
 ```
 
-## Deploy to heroku
+### Deploy to heroku
 
 - install heroku cli, in ubuntu
 
@@ -26,8 +32,8 @@ python3 -m flask run --host=0.0.0.0
 	heroku git:remote -a emoji-predictor
 	git push heroku master
 	```
-### Todos
+## Todos
 
-### Credit
+## Credit
 
 Heroku Deploy template from [Twitch Harassment Classifier Website](https://github.com/jeremyrchow/Harassment-Classifier-App)
