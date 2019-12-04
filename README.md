@@ -33,7 +33,7 @@ deploy [premoji](https://github.com/nickyfoto/premoji/) on heroku.
 	- [Bags of words](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html#bags-of-words)
 	- [tf-idf](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html#from-occurrences-to-frequencies)
 
-## Images
+## Data Visualization
 
 Emoji distribution (kaggle dataset)
 
