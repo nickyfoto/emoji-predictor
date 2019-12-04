@@ -26,5 +26,8 @@ python3 -m flask run --host=0.0.0.0
 	heroku git:remote -a emoji-predictor
 	git push heroku master
 	```
+### Todos
 
-Deploy template from [Twitch Harassment Classifier Website](https://github.com/jeremyrchow/Harassment-Classifier-App)
+### Credit
+
+Heroku Deploy template from [Twitch Harassment Classifier Website](https://github.com/jeremyrchow/Harassment-Classifier-App)
